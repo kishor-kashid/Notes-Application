@@ -1,0 +1,33 @@
+meta {
+  name: Delete Meeting by Resource
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:4000/meetingnotes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "meetingId": 123,
+    "title": "Weekly Team Meeting",
+    "content": "Discuss project updates and upcoming deadlines.",
+    "actionItems": [
+      {
+        "actionItemId": 1,
+        "item": "Follow up with client regarding feedback",
+        "pending_actions": true
+      },
+      {
+        "actionItemId": 2,
+        "item": "Prepare presentation for next meeting",
+        "pending_actions": false
+      }
+    ],
+    "createdDate": "2024-03-24T08:00:00Z"
+  }
+  
+}
