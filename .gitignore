@@ -1,0 +1,42 @@
+node_modules
+dist
+.sass-cache
+.env
+
+
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Visual Studio Code
+.vscode/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React
+build/
+dist/
+*.log
+
+# HTML
+*.html~
+
+# CSS
+*.css.map
+
+# JavaScript
+*.js.map
+
+# General
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
